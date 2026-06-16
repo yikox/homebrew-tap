@@ -5,8 +5,9 @@ class Quicklauncher < Formula
   sha256 "092ecfbcaa71ebba236ded20bc506f1ec99e20ddcb43ee78479b85db68b4ee45"
   license "MIT"
 
+  # 只需 Swift 工具链（AppKit/SwiftUI/Yams 均在 Command Line Tools 的 SDK 内），
+  # 不要求完整 Xcode；Homebrew 本就以 Command Line Tools 为前提。
   depends_on :macos
-  depends_on xcode: :build
 
   def install
     ENV["VERSION"] = version.to_s

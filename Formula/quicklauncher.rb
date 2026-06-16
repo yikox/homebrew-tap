@@ -10,6 +10,9 @@ class Quicklauncher < Formula
 
   def install
     ENV["VERSION"] = version.to_s
+    # Homebrew 在自己的沙箱里构建，SwiftPM 解析 manifest 时还会嵌套调用
+    # sandbox-exec（会被拒），用 --disable-sandbox 关掉 SwiftPM 那层沙箱。
+    ENV["EXTRA_SWIFT_FLAGS"] = "--disable-sandbox"
     # 复用仓库里的打包脚本：swift build -c release + 组装 .app + ad-hoc 签名
     system "./scripts/build-app.sh"
     prefix.install "build/QuickLauncher.app"

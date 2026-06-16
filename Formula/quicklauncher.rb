@@ -2,7 +2,7 @@ class Quicklauncher < Formula
   desc "菜单栏快速启动器（QuickLauncher）"
   homepage "https://github.com/yikox/quick-launcher"
   url "https://github.com/yikox/quick-launcher/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "0ca139a431601e6a510a2b378582e574135f65bf701b6219c94b81f99079f667"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   license "MIT"
 
   depends_on :macos

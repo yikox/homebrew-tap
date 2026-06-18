@@ -1,8 +1,8 @@
 class Quicklauncher < Formula
   desc "菜单栏快速启动器（QuickLauncher）"
   homepage "https://github.com/yikox/quick-launcher"
-  url "https://github.com/yikox/quick-launcher/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "a31ce3b7cfe45c6a85ae51f96f5155bb7cd8e620b786b7d6c24e29218a2b5c06"
+  url "https://github.com/yikox/quick-launcher/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "4da3010bedf4a5357c034d4c16b660a77588bc701f7b59fef6be6535224c4050"
   license "MIT"
 
   # 只需 Swift 工具链（AppKit/SwiftUI/Yams 均在 Command Line Tools 的 SDK 内），
